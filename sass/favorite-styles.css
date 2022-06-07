@@ -6,6 +6,11 @@ body {
 }
 nav  ul li {
     padding-top: 8px;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    padding-bottom: 8px;
 
 }
 
@@ -13,17 +18,17 @@ nav  ul li {
 nav {
     text-align: center;
     overflow: auto;
-    background-color: #FFC6D9;
-    background-image: -webkit-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
-    height: 50px;
+    height: 100px;
 }
 
 ul {
-  list-style: none;
-  margin: 5px; }
+    list-style: none;
+    margin-top: 23%;
+    margin-right: 23%;
+    margin-left: 23%;
+    margin-bottom: 23%;
+    width: 50%;
+}
   ul li {
     display: inline-block; }
     ul li a {
@@ -95,6 +100,13 @@ img.w-100.d-block.hero {
 
 .hero {
 }
+.w-70 {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
 .card-top {
     padding-bottom: 9px;
 }
@@ -134,4 +146,148 @@ footer p a:hover  {
     text-decoration: none;
     text-decoration-line: none;
 
+}
+.mobile-view {
+    display: none;
+}
+.navbar-toggler-icon.mobile-view {
+    display: none;
+}
+.desktop-view {
+}
+.nav-link.col-md-12.col-xl-12 {
+    height: 70px;
+}
+.expand {
+	display: block;
+}
+.img-fluid {
+
+}
+body footer p {
+    color: #FFFFFF;
+}
+body main table {
+    margin-left: 6%;
+}
+.header {
+    background-color: #000000;
+    color: #FFC6D9;
+    font-family: glass-antiqua, french-canon, droid-serif, bentham, Roman;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
+/*Tablet View*/
+@media (max-width: 990px){
+.nav-link ul {
+    display: none;
+}
+
+.navbar-toggler-icon.mobile-view {
+    display: block;
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 5px;
+	
+}
+
+nav {
+    height: 50px;
+}
+
+img {
+}
+div a img  {
+    width: 13%;
+}
+
+.expand {
+	display: block;
+}
+}
+
+@media (max-width: 767px){
+h1 p {
+    font-size: 70%;
+}
+div a img {
+    width: 15%;
+}
+.navbar-toggler-icon.mobile-view {
+    display: block;
+    margin-left: 90%;
+    margin-right: 5%;
+    margin-top: 5px;
+}
+.expand {
+	display: block;
+}
+
+
+
+
+}
+
+@media (max-width: 575px){
+.mobile-view {
+    display: block;
+}
+.desktop-view {
+    display: none;
+}
+h1 p {
+    font-size: 60%;
+}
+.expand {
+	display: block;
+}
+
+
+}
+
+@media (max-width: 480px){
+.mobile-view {
+    display: block;
+}
+.desktop-view {
+    display: none;
+}
+h1.text-center {
+    font-size: 200%;
+}
+h1 p {
+    font-size: 60%;
+}
+div a img {
+    width: 20%;
+}
+	.expand {
+		display: block;
+	}
+}
+
+/*Mobile View*/
+@media (max-width: 320px){
+.navbar-toggler-icon.mobile-view {
+    margin-top: 5px;
+}
+div a img  {
+    width: 20%;
+}
+h1 p {
+    font-family: overlock, pt-sans, antic, molengo, marvel;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50%;
+}
+}
+.header {
 }
