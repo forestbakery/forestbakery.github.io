@@ -1,12 +1,13 @@
 body {
-    font-family: Abel, Marvel, Molengo, Antic, Overlock SC;
+    font-family: Abel, Antic, advent-pro, Marvel, Molengo, Overlock SC;
     color: #000;
     margin: 0;
-    background-color: #F7DFFF;
+    background-color: #FFFFFF;
 }
 nav  ul li {
     padding-top: 8px;
-    background-image: -webkit-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+     font-weight: 400;
+	near-gradient: 270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%;
     background-image: -moz-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
     background-image: -o-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
     background-image: linear-gradient(180deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
@@ -23,14 +24,15 @@ nav {
 
 ul {
     list-style: none;
-    margin-top: 23%;
-    margin-right: 23%;
-    margin-left: 23%;
-    margin-bottom: 23%;
-    width: 50%;
+    width: 100%;
 }
   ul li {
-    display: inline-block; }
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
     ul li a {
     margin-top: 0px;
     margin-right: 4px;
@@ -39,10 +41,23 @@ ul {
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
-    font-family: overlock;
+    font-family: overlock, advent-pro;
     font-style: normal;
     font-weight: 400;
     font-size: large;
+}
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.bar {
+	display: block;
+	width: 30px;
+	height: 4px;
+	margin: 5px auto;
+	-webit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #ffc6d9;
 }
 .d-block {
     display: block;
@@ -61,7 +76,7 @@ h1 p {
     text-align: center;
     color: #FFA6A6;
     text-shadow: 2px 2px 2px #5F5F5F;
-    font-family: overlock, pt-sans, antic, molengo, marvel;
+    font-family: overlock, pt-sans, antic, molengo, marvel, advent-pro;
     font-style: normal;
     font-weight: 400;
 }
@@ -69,10 +84,11 @@ h1 p {
 h1  {
     padding-top: 30px;
     font-size: xx-large;
+    padding-bottom: 30px;
 }
 h5  {
     color: #FFA6A6;
-    font-family: overlock, pt-sans, antic, molengo, marvel;
+    font-family: overlock, pt-sans, antic, molengo, marvel,advent-pro;
     font-style: normal;
     font-weight: 400;
 }
@@ -112,7 +128,7 @@ img.w-100.d-block.hero {
 }
 h5 {
     color: #FFA6A6;
-    font-family: overlock, pt-sans, antic, molengo, marvel;
+    font-family: overlock, pt-sans, antic, molengo, marvel, advent-pro;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -129,7 +145,7 @@ img.first {
 header {
 }
 h2 {
-    font-family: abel, overlock, pt-sans, antic, molengo, marvel;
+    font-family: abel, overlock, pt-sans, antic, molengo, marvel, advent-pro;
     font-style: normal;
     font-weight: 400;
 }
@@ -178,6 +194,23 @@ body main table {
     font-weight: 400;
     font-size: x-large;
 }
+.nav-link.col-xl-12.col-12 .mobile-view .a {
+    background-image: -webkit-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,166,166,1.00) 0%,rgba(255,198,217,1.00) 100%);
+    list-style-type: none;
+    margin-top: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -190,18 +223,15 @@ body main table {
 .nav-link ul {
     display: none;
 }
-
-.navbar-toggler-icon.mobile-view {
+.mobile-view {
     display: block;
-    margin-left: 90%;
-    margin-right: 5%;
-    margin-top: 5px;
-	
-}
+	color: #ffffff;
+	}
 
 nav {
-    height: 50px;
+    height: 160px;
 }
+
 
 img {
 }
@@ -212,9 +242,19 @@ div a img  {
 .expand {
 	display: block;
 }
+.btn.navbar-toggler-icon.mobile-view.expand {
+    display: block;
+    float: right;
+}
+
+
 }
 
 @media (max-width: 767px){
+.mobile-view {
+    display: block;
+	color: #ffffff;
+	}
 h1 p {
     font-size: 70%;
 }
@@ -223,13 +263,13 @@ div a img {
 }
 .navbar-toggler-icon.mobile-view {
     display: block;
-    margin-left: 90%;
-    margin-right: 5%;
-    margin-top: 5px;
+    margin-top: 4px;
+    float: right;
 }
 .expand {
 	display: block;
 }
+
 
 
 
@@ -239,6 +279,7 @@ div a img {
 @media (max-width: 575px){
 .mobile-view {
     display: block;
+	color: #ffffff;
 }
 .desktop-view {
     display: none;
@@ -256,6 +297,7 @@ h1 p {
 @media (max-width: 480px){
 .mobile-view {
     display: block;
+	color: #FFFFFF;
 }
 .desktop-view {
     display: none;
@@ -279,11 +321,15 @@ div a img {
 .navbar-toggler-icon.mobile-view {
     margin-top: 5px;
 }
+	.mobile-view {
+		display: block;
+		color: #ffffff;
+	}
 div a img  {
     width: 20%;
 }
 h1 p {
-    font-family: overlock, pt-sans, antic, molengo, marvel;
+    font-family: overlock, pt-sans, antic, molengo, marvel, advent-pro;
     font-style: normal;
     font-weight: 400;
     font-size: 50%;
@@ -291,3 +337,12 @@ h1 p {
 }
 .header {
 }
+.nav-link.col-xl-12.col-12 .mobile-view .mobile-view {
+    color: #FFFFFF;
+}
+
+.nav-link.col-xl-12.col-12 .mobile-view {
+}
+.hover {
+}
+
